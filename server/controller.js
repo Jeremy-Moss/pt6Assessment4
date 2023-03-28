@@ -33,5 +33,15 @@ module.exports = {
         description: "Wash car"},
     ];
     res.status(200).send(toDoList);
+    },
+
+    add: (req, res) => {
+        toDoList.push();
+    res.status(200).send(toDoList)
+    },
+
+    remove: (req, res) => {
+        toDoList.delete();
+    res.status(200).send(toDoList)
     }
     }

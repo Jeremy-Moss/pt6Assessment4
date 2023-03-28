@@ -6,7 +6,7 @@ const getCompliment = () => {
         alert(data);
     }); 
 };
-complimentBtn.addEventListener('click', getCompliment);
+
 
 
 const fortuneBtn = document.getElementById("fortuneButton")
@@ -17,7 +17,7 @@ const getFortune = () => {
         alert(data);
     });
 };
-fortuneBtn.addEventListener('click', getFortune);
+
 
 
 const toDoBtn = document.getElementById("toDoButton")
@@ -28,10 +28,28 @@ const getList = () => {
         alert(data);
     });
 };
-toDoBtn.addEventListener('click', getList);
-
 
 const addBtn = document.getElementById("addBtn")
-const getList = ( => { 
-    axios.put 
-})
+const addToDo = () => { 
+    axios.put("http://localhost:4000/api/todo:description/", addBtn)
+    .then(res => {
+        const data = res.data;
+        alert(toDoList);
+    })
+};
+
+const removeBtn = document.getElementById("removeBtn")
+const removeToDo = () => { 
+    axios.put("http://localhost:4000/api/todo:description/", removeBtn)
+    .then(res => {
+        const data = res.data;
+        alert(toDoList);
+    })
+};
+
+complimentBtn.addEventListener('click', getCompliment);
+fortuneBtn.addEventListener('click', getFortune);
+toDoBtn.addEventListener('click', getList);
+addBtn.addEventListener('submit', getList);
+removeBtn.addEventListener('submit', getList)
+
