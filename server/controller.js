@@ -18,5 +18,20 @@ module.exports = {
         let randomFortune = fortunes[randomIndex];
     
         res.status(200).send(randomFortune);
+    },
+
+    getList: (req, res) => {
+    const toDoList = [{
+        listItem: {
+            id: 1, 
+            description: "Sell poncho"},
+        listItem: {
+            id: 2, 
+            description: "Grocery shopping"},
+        listItem: {
+        id: 3,
+        description: "Wash car"},
+    }];
+    res.status(200).send(listItem);
     }
-}
+    }
