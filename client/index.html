@@ -5,23 +5,27 @@
   </head>
   <body class="container">
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
     <br>
     <button id="complimentButton">Get a compliment</button><br>
     <button id="fortuneButton">Get your fortune</button><br>
-    <button id="toDoButton">Get my to-do list</button><br>
+    <button id="animalButton">Random animal</button><br>
+    <button id="swearButton">Swear Alternatives</button><br>
+    <button id="toDoButton">Show to-do list</button><br>
+    
     <br>
-    <form>
+    <form id="formAdd">
       <label for="add">Add "to-do" item</label><br>
       <input type="text" id="desc" name="desc"><br>
       <input type="submit" value="submit">
     </form>
     <br>
-    <form>
+    <form id="formRemove">
       <label for="remove">Remove "to-do" item</label><br>
       <input type="text" id="desc" name="desc"><br>
       <input type="submit" value="submit">
     </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
