@@ -21,17 +21,17 @@ module.exports = {
     },
 
     getList: (req, res) => {
-    const toDoList = [{
-        listItem: {
+    const toDoList = [
+        {
             id: 1, 
             description: "Sell poncho"},
-        listItem: {
+        {
             id: 2, 
             description: "Grocery shopping"},
-        listItem: {
+        {
         id: 3,
         description: "Wash car"},
-    }];
-    res.status(200).send(listItem);
+    ];
+    res.status(200).send(toDoList);
     }
     }
